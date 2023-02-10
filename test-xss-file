@@ -1,0 +1,64 @@
+import requests
+import random
+import string
+import base64
+import urllib.parse
+
+def double_url_encode(payload):
+
+  return urllib.parse.quote(urllib.parse.quote(payload))
+
+def html_encode(payload):
+ 
+  return payload.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;').replace("'", '&#x27;')
+
+def add_leading_zeros(payload):
+ 
+  return '0' * random.randint(1, 10) + payload
+
+def xml_encode(payload):
+  
+  return payload.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;').replace("'", '&apos;')
+
+def unicode_escape(payload):
+  
+  return ''.join(f'\\u{ord(c):04x}' for c in payload)
+
+def hex_escape(payload):
+  
+  return ''.join(f'\\x{ord(c):02x}' for c in payload)
+
+
+url = input("Enter the URL: ")
+param = input("Enter the parameter name: ")
+
+
+max_iterations = 1000
+
+
+min_length = 5
+
+
+max_length = 50
+
+for i in range(max_iterations):
+ 
+  payload = ''.join(random.choices(string.ascii_letters + string.digits + '<>/\\', k=random.randint(min_length, max_length)))
+
+  
+  obfuscation_method = random.choice([double_url_encode, html_encode, add_leading_zeros, xml_encode, unicode_escape, hex_escape])
+
+
+  payload = obfuscation_method(payload)
+
+ 
+  test_url = url + "?" + param + "=" + payload
+
+
+  r = requests.get(test_url)
+
+
+  if "XSS" in r.text:
+    print("XSS found at " + test_url)
+  else:
+    print("No XSS found at " + test_url)
