@@ -1,6 +1,7 @@
 import gc
 from selenium import webdriver
-from payload_obfuscator import PayloadObfuscator
+import PayloadObfuscator
+#from payload_obfuscator 
 
 class XSSScanner:
     def __init__(self):
