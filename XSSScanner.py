@@ -10,7 +10,7 @@ class XSSScanner:
     
     def test_xss(self, url, parameter):
         payloads = []
-        with open("xss_payloads.txt", "r") as f:
+        with open("payloads.txt", "r") as f:
             for line in f:
                 payload = line.strip()
                 payloads.append(payload)
